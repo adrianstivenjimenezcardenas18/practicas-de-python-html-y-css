@@ -31,6 +31,21 @@
 # print(miLista.index("adrian"))
 
 
+# # ejerccios de tupla
+# tupla = ("juan", 13, 1, 1995)
+# print(tupla[2])
+
+# tupla = ("juan", 13, 1, 1995)
+# # combertir tuplas en listas y viseversa con "tuple"
+# milista = list(tupla)
+# print(milista)
+# # imprimiendo si ese nombre o varable esta en en la lista tupla
+# print("juan" in milista)
+# # contar cuantas veses hay un avariable en la listas o tuplas
+# print(milista.count("juan"))
+# # contar cuantos caracteres tien en este caso mi listas
+# print(len(milista))
+
 # ##### ciclo while
 # i=1
 # while i<=12:
