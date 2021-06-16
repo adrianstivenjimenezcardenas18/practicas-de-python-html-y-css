@@ -1,3 +1,5 @@
+#########trabajos de adrians tiven jimenez cardenas#####################
+
 # #### funciones
 # def mensaje():
 #     print("hola mi nombre es adrian y estoy creando esta funcion")
@@ -17,16 +19,19 @@
 
 # suma(10, 20)
 
-######### listas en python ejerccios
-miLista=["maria","pepe","marta","antonio"]
-print(miLista[3])
-print(miLista[-2])
-print(miLista[0:3])
-print(miLista[1:])
-miLista.insert(1,"adrian")
-print(miLista)
-print(miLista.index("adrian"))
+# # listas en python ejerccios
+# miLista = ["maria", "pepe", "marta", "antonio"]
+# print(miLista[3])
+# print(miLista[-2])
+# print(miLista[0:3])
+# print(miLista[1:])
+# miLista.insert(1, "adrian")
+# print(miLista)
+# # te dice la  paccion de ese nombre
+# print(miLista.index("adrian"))
 
+
+# ##### ciclo while
 # i=1
 # while i<=12:
 #     print("ejecusion de ", str(i))
