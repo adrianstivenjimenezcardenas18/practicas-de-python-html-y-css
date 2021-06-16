@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso desde yutube</title>
+    <link rel="stylesheet" href="yutube.css">
+</head>
+
+<body>
+    <h1 class="hinicial">Nos dedicamos al agua segura para las personas,</h1>
+    <!-- poner los h1 en horizontal con una clase -->
+    <h1 class="horizontal">asdsdsadsdadadsad</h1>
+    <h1 class="horizontal">asdsdsadsdadadsad</h1>
+    <h1 class="horizontal">asdsdsadsdadadsad</h1>
+    <h1 class="horizontal">asdsdsadsdadadsad</h1>
+    <br>
+    <a href="#" class="amimir">inicio</a>
+    <a href="#" class="amimir">inicio</a>
+    <a href="#" class="amimir">inicio</a>
+    <a href="#" class="amimir">inicio</a>
+    <p class="pinicial">Nos dedicamos al agua segura para las personas, los sistemas de agua potable y el medio ambiente. Incluso el agua municipal pretratada puede causar problemas. La acumulación de minerales/calcio y la corrosión por oxigenación degrada la calidad del agua y causa ineficiencia en el sistema. La calidad del agua comienza con una plomería limpia y termina con un planeta saludable.</p>
+    <h1>
+        <a href="https://www.youtube.com/">
+            entrara a yutube
+        </a>
+    </h1>
+    <img src="imagenes/ataque-titanes-2080667.jpg" alt="esta es un aimagen de ejemplo">
+    <!--  listas en html-->
+    <!-- lista desordenadda -->
+    <h1>
+        <ul>
+            <li class="verde"> elementos 1</li>
+            <li> elementos 2</li>
+            <li class="verde fondo"> elementos 3</li>
+            <li id="unico"> elementos 4</li>
+        </ul>
+    </h1>
+    <!-- lista ordenada -->
+    <h1>
+        <ol>
+            <li> elementos 1</li>
+            <li> elementos 2</li>
+            <li> elementos 3</li>
+            <li> elementos 4</li>
+            </ul>
+        </ol>
+    </h1>
+    <!-- partes de un sitio web header, nav, section, aside, article, footer -->
+    <header>
+        <p> logo corporativo</p>
+    </header>
+    <!-- decorando a -->
+    <nav>
+        <button class="nav-boton" onclick="accion()">menu</button>
+        <!-- creando varias clases en un solo lado nav-enlaces y desaparece -->
+        <a href="#" class="nav-enlaces desaparece">inicio</a>
+        <a href="#" class="nav-enlaces desaparece">nosotros</a>
+        <a href="#" class="nav-enlaces desaparece">servicios</a>
+        <a href="#" class="nav-enlaces desaparece">contactos</a>
+    </nav>
+    <br>
+    <br><br>
+    <nav>
+        <a href="#">inicio</a>
+        <a href="#">nosotros</a>
+    </nav>
+    <section class="padre">
+        <p class="parrafos">pretratada puede causar problemas. La acumulación de minerales/calcio y la corrosión por oxigenación degrada la calidad del agua y causa ineficiencia en el sistema. La calidad del agua comienza con una plomería limpia y termina con un planeta saludable.</p>
+        <p class="parrafos">pretratada puede causar problemas. La acumulación de minerales/calcio y la corrosión por oxigenación degrada la calidad del agua y causa ineficiencia en el sistema. La calidad del agua comienza con una plomería limpia y termina con un planeta saludable.</p>
+        <p class="parrafos">pretratada puede causar problemas. La acumulación de minerales/calcio y la corrosión por oxigenación degrada la calidad del agua y causa ineficiencia en el sistema. La calidad del agua comienza con una plomería limpia y termina con un planeta saludable.</p>
+    </section>
+    <aside>
+        <p>publicidad</p>
+    </aside>
+    <!-- editar botones -->
+    <button>enviar</button>
+<!-- desde aqui para abajo es javascript  -->
+    <script>
+        function accion(params) {
+            console.log("esta funcionado mi boton")
+            var ancla = document.getElementsByClassName("nav-enlaces");
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classist.toggle("desaparece");
+            }
+
+        }
+    </script>
+</body>
+
+
+
+</html>

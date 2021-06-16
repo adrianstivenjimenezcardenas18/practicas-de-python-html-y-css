@@ -1,0 +1,43 @@
+.container {
+    margin: 0px auto;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.columna {
+    background: LightGray;
+    color: DimGray;
+    border: 1px solid DimGray;
+    margin: 10px;
+    padding: 10px;
+    /* bodes redondeados  */
+    border-radius: 15px;
+    /* poner sombras ,el 7px es la cantidad de sombreado */
+    box-shadow: 10px 10px 7px DimGray;
+}
+
+.precio {
+    font-size: 50px;
+    color: SpringGreen;
+}
+
+.btn-precio {
+    background: salmon;
+    color: white;
+    display: block;
+    padding: 10px;
+    /* quitando la linea debajo de los link */
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover{
+    background: Tomato;
+}

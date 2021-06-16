@@ -1,0 +1,130 @@
+h1 {
+    color: CadetBlue;
+    font-size: 25px;
+}
+
+#unico {
+    color: Orange;
+    font-size: 30px;
+}
+
+.verde {
+    color: LawnGreen;
+    font-size: 50px;
+}
+
+.fondo {
+    background: DarkGoldenrod;
+    margin: 100px 10px 100px 50px;
+    padding: 100px 10px 100px 10px;
+}
+
+.hinicial {
+    background: GreenYellow;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+.pinicial {
+    background: Chartreuse;
+    color: black;
+    margin: 10px;
+}
+
+/* añadiendo color y relleno */
+nav {
+    background: DeepSkyBlue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* añadiendo relleno , margen , porcentaje de ancho y colores */
+.parrafos {
+    background: HotPink;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    width: 29%;
+}
+
+/* poner en orizontal los parrafos desde "section" */
+.padre {
+    display: flex;
+}
+
+/* color del botton por normalidad */
+button {
+    background: LightSeaGreen;
+    color: white;
+}
+
+/* color del boton con el maus arriba */
+button:hover {
+    background: white;
+    color: LightSeaGreen;
+}
+
+/* colores del boton al precionarlo */
+button:active {
+    background: black;
+    color: white;
+}
+
+/* poner los h1 en orizontal */
+.horizontal {
+    background: salmon;
+    color: black;
+    display: inline-block;
+    width: 24%;
+}
+
+/* poniendo la a en vertical */
+.amimir {
+    background: salmon;
+    color: black;
+    /* colocar todo en horizontal */
+    display: block;
+    /* colocar la cantidad de te tamaño que ocupe horizontal en porcentaje */
+    width: 24%;
+}
+
+/* editando anv-enlaces */
+.nav-enlaces {
+    background: black;
+    color: white;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav-enlaces:hover {
+    background: SlateGray;
+}
+
+/* editar el boton del nav  */
+.nav-boton {
+    background:black;
+    color:white;
+    padding: 10px 0px;
+    border: 2px solid white;
+    display: none;
+}
+
+/* moficando para celular el tmaño despues de los 600px le dictas que quieres que haga */
+@media(max-width: 600px) {
+    nav {
+        background: Maroon;
+        flex-direction: column;
+    }
+
+    .nav-enlaces {
+        margin: 10px 0px;
+    }
+    .nav-boton{
+        display:inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
