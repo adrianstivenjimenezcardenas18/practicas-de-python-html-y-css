@@ -70,6 +70,28 @@
 # print(len(middicionario))
 
 
+# ########condicionales
+# notas=int(input("dijite su nota: "))
+
+# def evaluacion(notas):
+#     valoracion="aprobado"
+#     if notas < 5:
+#         valoracion="no,aprobado"
+#     return valoracion
+
+# print(evaluacion(notas))
+
+# ################################utilizando in para ver que si crelegida esta en careras
+# careras = ["ingeniero", "programador", "docente","tutor"]
+# print("escoga la  carrera que desee: ingeniro, programdor, docente, tutor ")
+# crelegida=input("dijite su carrera escogida: ")
+# # poniendo lo escriba  en minuscula, tambien esta upper()
+# crelegida=crelegida.lower()
+# if crelegida in careras:
+#     print("la carrera elegida es " + crelegida)
+# else:
+#     print("eligio una carrera que no esta en la listas")
+
 # ##### ciclo while
 # i=1
 # while i<=12:
@@ -164,7 +186,7 @@
 #     print("valor de la variable " + str(i))
 
 
-# # verificar un correo electronico
+# ######### verificar un correo electronico
 # contador = 0
 
 # correo = input("dijite su correo electronico : ")
@@ -179,7 +201,7 @@
 #     print("el email es incorrecto")
 
 
-# #utilizando la sinstruccione pass else y continue dentro de los bucles
+# ######utilizando la sinstruccione pass else y continue dentro de los bucles
 # for i in "adrian":
 #     if i == "r":
 #         continue
@@ -187,7 +209,7 @@
 #     print("imprimiendo la letra " + str(i))
 ##########
 
-# # verificando numer de cel
+# ######### verificando numer de cel
 # cel = (input("dijite su numero celular: "))
 # for i in cel:
 #     if i != 10:
@@ -232,7 +254,7 @@
 
 # pidiendo numro a usuario
 
-
+# ########jercicio echo po mi
 # print("buenos dias como esta espero que bien que quieres hacer el dia de hoy ")
 # print("estas son las opcione que tenemos 1 para registrarse")
 # opcione = int(input("dijite su opcion "))
@@ -267,3 +289,48 @@
 #         print("el email es incorrecto")
 #         print("su nombre es :" + nombre + " y su edad es :" + str(edad) +
 #           " gracias ya tenemos todos su registros que necesitamos ")
+
+# #####ejerccios de generadores ojo
+# def generapares(limite):
+#     numero1 = 1
+#     milista = []
+#     while numero1 < limite:
+#         milista.append(numero1*2)
+#         numero1 += 1
+#     return milista
+
+# print(generapares(10))
+
+# ########
+# def generapares(limite):
+#     numero1 = 1
+#     while numero1 < limite:
+# # yield contien los numeros
+#         yield numero1*2
+#         numero1 += 1
+
+
+# contenedordefuncion=generapares(10)
+
+# print(next(contenedordefuncion))
+# print("aqui podria ir mas codigo....")
+# print(next(contenedordefuncion))
+
+# ###practica generadores ll
+# #el * es para poder insertar los parametros que desees
+# def devuelve_valores(*ciudades):
+#     for palabras in ciudades:
+#         #for letra in palabras:
+#             yield from palabras
+
+# contendo_ciudadaes=devuelve_valores("madrid", "barcelona","bilbao","valencia")
+
+# print(next(contendo_ciudadaes))
+# print(next(contendo_ciudadaes))
+# print(next(contendo_ciudadaes))
+# print(next(contendo_ciudadaes))
+
+#######ejerccios de extenciones
+
+
+
