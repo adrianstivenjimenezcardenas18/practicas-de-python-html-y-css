@@ -339,7 +339,7 @@
 # print(divide(numero1, numero2))
 # print("gracias por insertar los numeros")
 
-# ######
+# # ######
 # def divide():
 #     try:
 #         op1=float(input("introduce el primer numero: "))
@@ -355,3 +355,85 @@
 #         print("calculo finalizado")
 
 # divide()
+
+
+# ###### programacion orientada a objetos POO
+# # calses
+# class Coche():
+#     # propiedades de la clase
+#     largoChasis = 250
+#     anchoChasis = 120
+#     rueda = 4
+#     enMarcha = False
+
+#     # metodo o comportamiento, de la clase
+#     def arrancar(self):
+#         # argumento o paramtro self
+#         self.enMarcha = True
+
+#     def estado(self):
+#         if self.enMarcha:
+#             return "el coche esta en marcah"
+#         else:
+#             return "el coche esta paraddo"
+
+
+# # crear objeto o instancia, binculado a la  clase
+# miCoche = Coche()
+# # mostrar desde el objet  lo que tiene la clase por dentro
+# print("el largo del coche es: " + str(miCoche.largoChasis))
+# print("mi coche tien " + str(miCoche.rueda))
+# #llamando el metodo arrancar
+# miCoche.arrancar()
+# #imprimiendo el metodo de stado
+# print(miCoche.estado())
+
+
+#####
+class Coche():
+    #funcion de tipo cintructor, es el estado inicial de las propiedades
+    def __init__(self):
+
+        # propiedades de la clase
+        self.largoChasis = 250
+        self.anchoChasis = 120
+        #encapsulando propiedades para que no se puedan modifcar desde afuera de la clase
+        self.__rueda = 4
+        self.__enMarcha = False
+
+    # metodo o comportamiento, de la clase
+    def arrancar(self, arrancamos):
+        self.__enMarcha = arrancamos
+
+        if self.__enMarcha == True:
+            return "el coche esta en marcah"
+        else:
+            return "el coche esta paraddo"
+
+    def estado(self):
+        print("mi coche tiene" + str(self.__rueda) + "ruedas. un ancho de " + str(self.anchoChasis) + "y un largo de" + str(self.largoChasis))
+
+
+# crear objeto o instancia, binculado a la  clase
+miCoche = Coche()
+# mostrar desde el objet  lo que tiene la clase por dentro
+print("el largo del coche es: " + str(miCoche.largoChasis))
+try:
+    print("mi coche tien " + str(miCoche.rueda)+ "ruedas")
+except AttributeError:
+    print("esto esta un poco mal pronto lo arreglare")
+# llamando el metodo arrancar
+print(miCoche.arrancar(True))
+# llamando el metodo de stado-
+miCoche.estado()
+
+print("------------------A continuacion crearemos el segundo objeto--------------------")
+
+miCoche2 = Coche()
+print("el largo del coche es: " + str(miCoche.largoChasis))
+try:
+    print("mi coche tien " + str(miCoche.rueda))
+except AttributeError:
+    print("otro erro que pronto solucionare")
+print(miCoche2.arrancar(False))
+miCoche2.estado()
