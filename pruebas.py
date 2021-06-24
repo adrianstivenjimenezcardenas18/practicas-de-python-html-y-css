@@ -1,6 +1,55 @@
 #########trabajos de adrians tiven jimenez cardenas#####################
 
-# #### funciones
+
+# # ################################################### metodos python #########################################################
+# nombre = "aDrIaN"
+# # pone los nombre minusculas
+# nombre = nombre.lower()
+# # pone los nombre en m mayuscula
+# nombre = nombre.upper()
+# # cuanta cuantas vese esta la "a" en adrian
+# nombre.count("a")
+# print(nombre)
+
+
+# ################################## metodos en lista################################
+# lista = [2, 7, 8, 14, 8]
+# # cuenta cuantos caracteres tien mi lista en
+# catidaenlalista = len(lista)
+# # busca el elemento mas mas alto de la  lista de
+# print(max(lista))
+# # busca el numero mas pequeño de la  lista
+# print(min(lista))
+# ###############################ahñadir####################
+# # agregar elementos a mi lista de
+# lista.append("adrian")
+# #agregando listas dentro de lista
+# lista.append([12,23,"jimenez"])
+# #agregando los numero del 1 al 9 en la lista y los pone de ultimos
+# lista.extend(range(1,10))
+# #me permite agregar varios objetos a la lista como tal no dentro de nada
+# lista.extend([100,101,1002])
+# #agrega un objeto en la pocicion que tu le des, y lo que quieres agregar
+# lista.insert(1,100000)
+# ################################eliminar####################
+# #elimina el numero que le indiques
+# lista.remove("adrian")
+# # ordenas los datos  de la lista de
+# ordenenlalista = lista.sort()
+# # ver los elementos de la lista alreves
+# alreverlista = lista.reverse()
+
+# print(lista)
+
+
+# ###################datos relevantes
+
+# verifica cuantas veses cabe el 10 en 20
+# prueba = 20//10
+# print(prueba)
+
+
+# ############################################################ funciones
 # def mensaje():
 #     print("hola mi nombre es adrian y estoy creando esta funcion")
 #     print("tengo 18 años y estoy aprendiendo python")
@@ -19,19 +68,26 @@
 
 # suma(10, 20)
 
-# # listas en python ejerccios
-# miLista = ["maria", "pepe", "marta", "antonio"]
+# ################################################################## listas en python ejerccios
+# miLista = ["maria", "pepe", "marta", "antonio", ["adriann", 12,34]]
+# #ingresando a un atupla dentro de otra tupla
+# print(miLista[4][0])
+# #imprimiendo el objeto marta de la lista
 # print(miLista[3])
+# #imprimiendo alrever la lita y imprimiendo antonio
 # print(miLista[-2])
+# #imprimiendo maria hasta el 3
 # print(miLista[0:3])
+# #imprimiendo de pepe hasta dond eacabe la lista
 # print(miLista[1:])
+# #cambiando un objeto por otro
 # miLista.insert(1, "adrian")
-# print(miLista)
 # # te dice la  paccion de ese nombre
 # print(miLista.index("adrian"))
+# print(miLista)
 
 
-# ###### ejerccios de tupla
+# ################################################################## ejerccios de tupla
 # tupla = ("juan", 13, 1, 1995)
 # print(tupla[2])
 
@@ -46,7 +102,7 @@
 # # contar cuantos caracteres tien en este caso mi listas
 # print(len(milista))
 
-# ####### ejerccios de diccionario
+# ############################################################# ejerccios de diccionario
 # midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
 #                  "reino unido": "londres", "esapña": "madrid"}
 # print(midiccionario["esapña"])
@@ -70,7 +126,7 @@
 # print(len(middicionario))
 
 
-# ########condicionales
+# ########################################################condicionales
 # notas=int(input("dijite su nota: "))
 
 # def evaluacion(notas):
@@ -81,7 +137,7 @@
 
 # print(evaluacion(notas))
 
-# ################################utilizando in para ver que si crelegida esta en careras
+# #######utilizando in para ver que si crelegida esta en careras
 # careras = ["ingeniero", "programador", "docente","tutor"]
 # print("escoga la  carrera que desee: ingeniro, programdor, docente, tutor ")
 # crelegida=input("dijite su carrera escogida: ")
@@ -92,7 +148,101 @@
 # else:
 #     print("eligio una carrera que no esta en la listas")
 
-# ##### ciclo while
+# trabajo del instructor oscar ####################################333
+# ######################taller des profesor oscar 1:
+# nombre = input("dijite su  nombre: ")
+# mensualidad = int(input("dijite su  mensualidad: "))
+# edad = int(input("dijite su  edad: "))
+# sexo = input("dijite su sexo M o F: ")
+# sexo = sexo.upper()
+
+# if sexo == "M" and mensualidad < 1200000:
+#     print("usted " + nombre + " se encuentra en la categoria #a ")
+
+# elif sexo == "F" and mensualidad > 4000000:
+#     print("usted "+ nombre + " se encuentra en la categoria #b")
+
+# elif sexo == "F" and edad > 20 or edad < 30 and mensualidad > 1200000 or mensualidad < 4000000:
+#     print("usted "+ nombre + " se encuentra en la categoria #c")
+
+
+# #################ejercico numero 2
+# ingresos = int(input("por favor dijite su ingresos: "))
+# estado_civil = input("dijite S si esta soltero o C si esta casado: ")
+# estado_civil = estado_civil.upper()
+# tiene_hijos = input("dijite si tien hijos escreiba SI o NO: ")
+# tiene_hijos = tiene_hijos.upper()
+
+
+# print(estado_civil)
+# if ingresos > 20000000:
+#     print("el credito se cosede")
+# elif ingresos < 20000000 or ingresos > 12000000 and estado_civil == "S":
+#     print("se consede el prestamo")
+# if ingresos > 15000000 or ingresos < 20000000 and estado_civil == "s" and tiene_hijos == "SI":
+#     print("se le consede el prestamo")
+# else:
+#     print("lo siento el prestamo no se le cosede")
+
+
+# # ####################ejercicio numero 5
+
+# horas_trabajadas = int(input("digite la cantidad de horas que trabaja: "))
+# pago_hora = float(input("digite el pago por cada hora: "))
+
+# if horas_trabajadas > 48:
+#     triple = horas_trabajadas-48
+#     sueldo = 40*pago_hora+(8*pago_hora*2)+(triple*pago_hora*3)
+# elif horas_trabajadas > 10:
+#     doble = horas_trabajadas-40
+#     sueldo = 40*pago_hora+(doble*pago_hora*2)
+# else:
+#     sueldo = horas_trabajadas*pago_hora
+# print("el sueldo total por las", horas_trabajadas,
+#       "horas trabajadas es: $", sueldo)
+
+
+######################ejercico de ciclos con el instructo oscar vanegas#####################
+# 2. Realiza el código correspondiente al siguiente ejemplo de ejecución de un programa en Python, a
+# través de la estructura while y condicional elif.
+
+# pregunta = "si"
+# while pregunta == "si":
+#     print("Que quieres hacer hoy? Escribe una opción: ")
+#     print(" 1 para Saludar")
+#     print(" 2 para Sumar dos numeros")
+#     print(" 3 para Salir")
+#     respuesta = int(input("ingrese su respuesta su  respuesta: "))
+#     if respuesta == 2:
+#         numero_1 = int(input("ingresa un numero: "))
+#         numero_2 = int(input("ingresa otro numero para sumar: "))
+#         print(f"este es el resultado de la suma es {numero_1+numero_2}")
+#     elif respuesta == 1:
+#         print("hola como estas?, espero que estes bien: ")
+#     elif respuesta == 3:
+#         print("gracias por poner aprueba mi codigo")
+#         break
+#     else:
+#         print("lo sinto dijite un numero que este en el los que se piden")
+
+# ######### ejercio 3 del profesor oscar mauricio
+# contraseña = input("por favor dijite su contraseña: ")
+# contraseña2 = input("por favor dijite su contraseña para comprobarla: ")
+# intentos = 1
+# while contraseña2 != contraseña:
+#     print("lo siento su contraseña no coinside dijitela de nuevo")
+#     contraseña2 = input("por favor dijite su contraseña para comprobarla: ")
+#     intentos += 1
+#     if intentos == 3:
+#         print("lo siento an consumido muchos intentos")
+#         break
+# else:
+#     print("gracias po ringresar su contraseña")
+
+
+#################################################################trabajo del instructor oscar /####################################
+
+# ################################################### ciclo while
 # i=1
 # while i<=12:
 #     print("ejecusion de ", str(i))
@@ -109,7 +259,15 @@
 # print("su edad es "+ str(edad))
 
 
-# sacando la raiz cuadrada de un numero
+# ###########ejrciio 4 del instructor oscar mauricio
+# numeropares= int(input("dijite un nuemero par: "))
+
+# while numeropares % 2 != 0:
+#     print(" lo sinto tu numero no es par dijitelo nuevamente")
+#     numeropares= int(input("dijite un nuemero par: "))
+
+
+# ####################sacando la raiz cuadrada de un numero
 
 # import math
 
@@ -173,7 +331,7 @@
 ##########################################
 
 
-# entramos en ciclo for
+# ###############################################################3 entramos en ciclo for
 
 
 ##########################################
@@ -290,7 +448,7 @@
 #         print("su nombre es :" + nombre + " y su edad es :" + str(edad) +
 #           " gracias ya tenemos todos su registros que necesitamos ")
 
-# #####ejerccios de generadores ojo
+# ###########################################################ejerccios de generadores ojo
 # def generapares(limite):
 #     numero1 = 1
 #     milista = []
@@ -357,7 +515,7 @@
 # divide()
 
 
-# ###### programacion orientada a objetos POO
+# ###################################################################### programacion orientada a objetos POO
 # # calses
 # class Coche():
 #     # propiedades de la clase
@@ -389,51 +547,51 @@
 # print(miCoche.estado())
 
 
-#####
-class Coche():
-    #funcion de tipo cintructor, es el estado inicial de las propiedades
-    def __init__(self):
+# #####
+# class Coche():
+#     #funcion de tipo cintructor, es el estado inicial de las propiedades
+#     def __init__(self):
 
-        # propiedades de la clase
-        self.largoChasis = 250
-        self.anchoChasis = 120
-        #encapsulando propiedades para que no se puedan modifcar desde afuera de la clase
-        self.__rueda = 4
-        self.__enMarcha = False
+#         # propiedades de la clase
+#         self.largoChasis = 250
+#         self.anchoChasis = 120
+#         #encapsulando propiedades para que no se puedan modifcar desde afuera de la clase
+#         self.__rueda = 4
+#         self.__enMarcha = False
 
-    # metodo o comportamiento, de la clase
-    def arrancar(self, arrancamos):
-        self.__enMarcha = arrancamos
+#     # metodo o comportamiento, de la clase
+#     def arrancar(self, arrancamos):
+#         self.__enMarcha = arrancamos
 
-        if self.__enMarcha == True:
-            return "el coche esta en marcah"
-        else:
-            return "el coche esta paraddo"
+#         if self.__enMarcha == True:
+#             return "el coche esta en marcah"
+#         else:
+#             return "el coche esta paraddo"
 
-    def estado(self):
-        print("mi coche tiene" + str(self.__rueda) + "ruedas. un ancho de " + str(self.anchoChasis) + "y un largo de" + str(self.largoChasis))
+#     def estado(self):
+#         print("mi coche tiene" + str(self.__rueda) + "ruedas. un ancho de " + str(self.anchoChasis) + "y un largo de" + str(self.largoChasis))
 
 
-# crear objeto o instancia, binculado a la  clase
-miCoche = Coche()
-# mostrar desde el objet  lo que tiene la clase por dentro
-print("el largo del coche es: " + str(miCoche.largoChasis))
-try:
-    print("mi coche tien " + str(miCoche.rueda)+ "ruedas")
-except AttributeError:
-    print("esto esta un poco mal pronto lo arreglare")
-# llamando el metodo arrancar
-print(miCoche.arrancar(True))
-# llamando el metodo de stado-
-miCoche.estado()
+# # crear objeto o instancia, binculado a la  clase
+# miCoche = Coche()
+# # mostrar desde el objet  lo que tiene la clase por dentro
+# print("el largo del coche es: " + str(miCoche.largoChasis))
+# try:
+#     print("mi coche tien " + str(miCoche.rueda)+ "ruedas")
+# except AttributeError:
+#     print("esto esta un poco mal pronto lo arreglare")
+# # llamando el metodo arrancar
+# print(miCoche.arrancar(True))
+# # llamando el metodo de stado-
+# miCoche.estado()
 
-print("------------------A continuacion crearemos el segundo objeto--------------------")
+# print("------------------A continuacion crearemos el segundo objeto--------------------")
 
-miCoche2 = Coche()
-print("el largo del coche es: " + str(miCoche.largoChasis))
-try:
-    print("mi coche tien " + str(miCoche.rueda))
-except AttributeError:
-    print("otro erro que pronto solucionare")
-print(miCoche2.arrancar(False))
-miCoche2.estado()
+# miCoche2 = Coche()
+# print("el largo del coche es: " + str(miCoche.largoChasis))
+# try:
+#     print("mi coche tien " + str(miCoche.rueda))
+# except AttributeError:
+#     print("otro erro que pronto solucionare")
+# print(miCoche2.arrancar(False))
+# miCoche2.estado()
