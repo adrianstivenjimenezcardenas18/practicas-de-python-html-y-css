@@ -102,28 +102,28 @@
 # # contar cuantos caracteres tien en este caso mi listas
 # print(len(milista))
 
-# ############################################################# ejerccios de diccionario
-# midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
-#                  "reino unido": "londres", "esapña": "madrid"}
-# print(midiccionario["esapña"])
-# # agregando mas paise y su capital
-# midiccionario["colombia"] = "barranquillla"
-# print(midiccionario)
-# # cambiandole la capital a colombia
-# midiccionario["colombia"] = "bogota"
-# print(midiccionario)
-# # eliminando elemto ,reino unido y su capital
-# del midiccionario["reino unido"]
-# print(midiccionario)
-# middicionario = {23: "jordan", "nombre": "michael", "adrian": "stiven",
-#                  "brayan": "andres", "anillos": {"temporadas": [1991, 1992, 1993, 1994, 1995, 1996]}}
-# # ingresar a 1993 jajja imbentado por mi
-# print(middicionario["anillos"]["temporadas"][2])
-# # imprimir todas las llaver del diccionario
-# print(middicionario.keys())
-# # imprimir los valores de las llaves
-# print(middicionario.values())
-# print(len(middicionario))
+############################################################# ejerccios de diccionario
+midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
+                 "reino unido": "londres", "esapña": "madrid"}
+print(midiccionario["irlanda"])
+# agregando mas paise y su capital
+midiccionario["colombia"] = "barranquillla"
+print(midiccionario)
+# cambiandole la capital a colombia
+midiccionario["colombia"] = "bogota"
+print(midiccionario)
+# eliminando elemto ,reino unido y su capital
+del midiccionario["reino unido"]
+print(midiccionario)
+middicionario = {23: "jordan", "nombre": "michael", "adrian": "stiven",
+                 "brayan": "andres", "anillos": {"temporadas": [1991, 1992, 1993, 1994, 1995, 1996]}}
+# ingresar a 1993 jajja imbentado por mi
+print(middicionario["anillos"]["temporadas"][2])
+# imprimir todas las llaver del diccionario
+print(middicionario.keys())
+# imprimir los valores de las llaves
+print(middicionario.values())
+print(len(middicionario))
 
 
 # ########################################################condicionales
@@ -729,4 +729,54 @@
 
 # desplazamientodevehiculos(micamion)
 
-##ejrcicio por mi progrmacion orientada a objeto################################
+
+# ##################### funcio lambda ###################
+# ##########3######funcion,parametroslos 2 puntos son para retornar base*altura
+# area_triengulo = lambda base, altura:(base*altura)/2
+
+# print(area_triengulo(2, 7))
+
+# print(area_triengulo(30,12))
+
+# ##elevar al cubo###########
+
+# al_cubo = lambda numero:(numero**3)
+# print(f"este es la el resutado  {al_cubo(3)}")
+
+# #####################funcion filter ###############
+
+# #filtrando solo numeros pares
+# numeros = [17, 24, 7, 39, 8, 51, 92]
+
+# print(list(filter(lambda numero_par: numero_par % 2 == 0, numeros)))
+
+##################funcion map ####################
+
+
+import math
+
+numero = int(input("dijite un numero: "))
+
+#modulo
+if math.fmod(numero,2) == 0:
+    print(f"su numero es par {math.fmod(numero,2)}")
+else:
+    print("su numero no es par")
+
+#elevado al cuadradado
+if math.exp(numero):
+    print(f"su numero es par {math.exp(numero)}")
+else:
+    print("su numero no es par")
+
+# la potencia de un numer elevado a otro numero potencia
+if math.pow(numero,2):
+    print(f"su numero es par {math.pow(numero,2)}")
+else:
+    print("su numero no es par")
+
+#sacando la raix cuadrada de un numero
+if math.sqrt(numero):
+    print(f"su numero es par {math.sqrt(numero)}")
+else:
+    print("su numero no es par")
