@@ -102,28 +102,28 @@
 # # contar cuantos caracteres tien en este caso mi listas
 # print(len(milista))
 
-############################################################# ejerccios de diccionario
-midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
-                 "reino unido": "londres", "esapña": "madrid"}
-print(midiccionario["irlanda"])
-# agregando mas paise y su capital
-midiccionario["colombia"] = "barranquillla"
-print(midiccionario)
-# cambiandole la capital a colombia
-midiccionario["colombia"] = "bogota"
-print(midiccionario)
-# eliminando elemto ,reino unido y su capital
-del midiccionario["reino unido"]
-print(midiccionario)
-middicionario = {23: "jordan", "nombre": "michael", "adrian": "stiven",
-                 "brayan": "andres", "anillos": {"temporadas": [1991, 1992, 1993, 1994, 1995, 1996]}}
-# ingresar a 1993 jajja imbentado por mi
-print(middicionario["anillos"]["temporadas"][2])
-# imprimir todas las llaver del diccionario
-print(middicionario.keys())
-# imprimir los valores de las llaves
-print(middicionario.values())
-print(len(middicionario))
+# ############################################################# ejerccios de diccionario
+# midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
+#                  "reino unido": "londres", "esapña": "madrid"}
+# print(midiccionario["irlanda"])
+# # agregando mas paise y su capital
+# midiccionario["colombia"] = "barranquillla"
+# print(midiccionario)
+# # cambiandole la capital a colombia
+# midiccionario["colombia"] = "bogota"
+# print(midiccionario)
+# # eliminando elemto ,reino unido y su capital
+# del midiccionario["reino unido"]
+# print(midiccionario)
+# middicionario = {23: "jordan", "nombre": "michael", "adrian": "stiven",
+#                  "brayan": "andres", "anillos": {"temporadas": [1991, 1992, 1993, 1994, 1995, 1996]}}
+# # ingresar a 1993 jajja imbentado por mi
+# print(middicionario["anillos"]["temporadas"][2])
+# # imprimir todas las llaver del diccionario
+# print(middicionario.keys())
+# # imprimir los valores de las llaves
+# print(middicionario.values())
+# print(len(middicionario))
 
 
 # ########################################################condicionales

@@ -81,4 +81,14 @@ while personas<4:
     personas=personas+1
 
 promedio = sumaedades/4
-print("su promedio es " + str(promedio))
+print("su promedio es " + str(promedio)
+
+##############un nombre con un numreo limitado de letras
+
+nombre = (input("dijite su nombre: "))
+
+while len((nombre)) > 15:
+    print("lo sentimos su npombre de tenr como maximo 15 letras")
+    nombre = (input("dijite su nombre: "))
+
+print(f"gracias por dijtar su nombre su nombre {nombre} ")

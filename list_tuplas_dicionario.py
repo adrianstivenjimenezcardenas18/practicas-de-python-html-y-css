@@ -1,4 +1,4 @@
-# listas en python ejerccios
+# ################################# listas en python ejerccios
 miLista = ["maria", "pepe", "marta", "antonio", ["adriann", 12, 34]]
 # ingresando a un atupla dentro de otra tupla
 print(miLista[4][0])
@@ -17,7 +17,19 @@ print(miLista.index("adrian"))
 print(miLista)
 
 
-# ejerccios de tupla
+####### clonar listas en python
+a = ["adrian", 1, 2]
+#asi se clona una lista
+c = list(a)
+#otra forma de clonar listas
+d = a[::]
+#mirando los id
+print(id(a))
+print(id(c))
+print(id(d))
+
+
+# ############################3 ejerccios de tupla
 tupla = ("juan", 13, 1, 1995)
 print(tupla[2])
 
@@ -32,7 +44,7 @@ print(milista.count("juan"))
 # contar cuantos caracteres tien en este caso mi listas
 print(len(milista))
 
-# ejerccios de diccionario
+# #########################ejerccios de diccionario
 midiccionario = {"alemania": "berlin", "francia": "paris", 23: "jordan",
                  "reino unido": "londres", "esapña": "madrid"}
 print(midiccionario["irlanda"])

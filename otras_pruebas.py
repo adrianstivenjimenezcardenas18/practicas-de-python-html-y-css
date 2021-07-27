@@ -1,3 +1,4 @@
-frutas = ['manzana', 'pera', 'mango']
-for fruta in frutas:
-    print(fruta)
+
+listas = [123, 122, 23, 45, 56, 123]
+
+print(listas[3])
