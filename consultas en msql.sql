@@ -63,5 +63,19 @@ limit 5
 ;
 
 
+select nombre_categoria,count(titulo) as contidad
+from categorias as c 
+inner join post as p on c.id = p.categoria_id
+group by nombre_categoria
+order by contidad desc
+limit 1;
+
+
+#########mostrando los nombre de las categorias
+select login,group_concat(nombre_categoria)
+from usuarios as u 
+inner join post as p on u.id = p.usuario_id
+inner join categorias as c on c.id = p.categoria_id
+group by  login;
 
 
