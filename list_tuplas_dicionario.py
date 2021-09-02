@@ -65,4 +65,6 @@ print(middicionario["anillos"]["temporadas"][2])
 print(middicionario.keys())
 # imprimir los valores de las llaves
 print(middicionario.values())
+#imprimir tanto llaves como values
+print(middicionario.items())
 print(len(middicionario))
